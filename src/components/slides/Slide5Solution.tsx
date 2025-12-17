@@ -11,24 +11,24 @@ export function Slide5Solution() {
       </div>
 
       {/* Content Container */}
-      <div className="relative w-full h-full flex flex-col px-32 py-20">
+      <div className="relative w-full h-full flex flex-col px-32 py-16">
         {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-8"
+          className="text-center mb-6"
         >
-          <h1 className="text-5xl text-[#1A0B2E] tracking-tight mb-4">
+          <h1 className="text-5xl text-[#1A0B2E] tracking-tight mb-3">
             Live-Demo Platform as Part of Sales Process
           </h1>
           <p className="text-2xl text-[#6B46C1]">
-            Unified client journey: from interest → to trust
+            Unified client journey: from interest to trust
           </p>
         </motion.div>
 
         {/* Funnel Visualization */}
-        <div className="flex-1 flex flex-col justify-center items-center gap-6 max-w-5xl mx-auto w-full">
+        <div className="flex-1 flex flex-col justify-center items-center gap-4 max-w-5xl mx-auto w-full">
           {/* Level 1 - Widest */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -118,11 +118,9 @@ export function Slide5Solution() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 1.1 }}
-            className="mt-4"
+            className="mt-2"
           >
-            <div className="w-16 h-16 rounded-full bg-[#10B981] flex items-center justify-center shadow-lg">
-              <span className="text-3xl">🎯</span>
-            </div>
+            <div className="w-12 h-12 rounded-full bg-[#10B981] flex items-center justify-center shadow-lg border-4 border-white" />
           </motion.div>
         </div>
       </div>

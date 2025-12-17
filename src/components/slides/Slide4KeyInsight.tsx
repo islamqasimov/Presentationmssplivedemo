@@ -35,9 +35,8 @@ export function Slide4KeyInsight() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-center mb-16 relative"
+          className="text-center mb-16"
         >
-          <Quote className="w-16 h-16 text-[#E9D5FF] absolute -top-8 left-1/2 -translate-x-1/2" />
           <blockquote className="text-3xl text-[#6B46C1] leading-relaxed max-w-5xl mx-auto">
             "We sell systems that must work in crisis situations,<br />
             through static slides and promises"
@@ -64,19 +63,19 @@ export function Slide4KeyInsight() {
               </div>
               <div className="space-y-4 text-lg text-[#2D1B69]">
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl">🔍</span>
+                  <span className="w-6 h-6 text-[#6B46C1]">•</span>
                   <span>Incident detection</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl">⚡</span>
+                  <span className="w-6 h-6 text-[#6B46C1]">•</span>
                   <span>Response time</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl">💪</span>
+                  <span className="w-6 h-6 text-[#6B46C1]">•</span>
                   <span>System behavior under load</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl">👁️</span>
+                  <span className="w-6 h-6 text-[#6B46C1]">•</span>
                   <span>Transparency of SOC actions</span>
                 </div>
               </div>
@@ -114,15 +113,15 @@ export function Slide4KeyInsight() {
               </div>
               <div className="space-y-4 text-lg text-gray-600">
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl">📐</span>
+                  <span className="w-6 h-6 text-gray-400">•</span>
                   <span>Architectural diagrams</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl">📋</span>
+                  <span className="w-6 h-6 text-gray-400">•</span>
                   <span>Feature lists</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl">✓</span>
+                  <span className="w-6 h-6 text-gray-400">•</span>
                   <span>Compliance requirements</span>
                 </div>
               </div>
@@ -145,7 +144,7 @@ export function Slide4KeyInsight() {
           <div className="flex items-center justify-center gap-4 text-white">
             <Eye className="w-8 h-8" strokeWidth={1.5} />
             <p className="text-2xl">
-              👉 System value is <strong>not observable before purchase</strong>
+              System value is <strong>not observable before purchase</strong>
             </p>
           </div>
         </motion.div>

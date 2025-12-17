@@ -17,13 +17,13 @@ export function Slide9ControlBoundaries() {
       </div>
 
       {/* Content Container */}
-      <div className="relative w-full h-full flex flex-col px-32 py-20">
+      <div className="relative w-full h-full flex flex-col px-32 py-16">
         {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <h1 className="text-5xl text-[#1A0B2E] tracking-tight">
             How We Manage Risks and Avoid 'Endless Project'
@@ -31,7 +31,7 @@ export function Slide9ControlBoundaries() {
         </motion.div>
 
         {/* Three Sections */}
-        <div className="flex-1 flex flex-col gap-8 justify-center">
+        <div className="flex-1 flex flex-col gap-6 justify-center">
           {/* Section 1 */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -92,15 +92,15 @@ export function Slide9ControlBoundaries() {
               </h3>
               <div className="text-lg text-[#2D1B69] space-y-3">
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl">✅</span>
+                  <span className="w-6 h-6 text-[#10B981]">•</span>
                   <span>Continue and develop</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl">🔄</span>
+                  <span className="w-6 h-6 text-[#F59E0B]">•</span>
                   <span>Adjust format</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl">⏸️</span>
+                  <span className="w-6 h-6 text-[#EF4444]">•</span>
                   <span>Stop without losses</span>
                 </div>
               </div>

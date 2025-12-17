@@ -10,13 +10,13 @@ export function Slide2PresalesProblem() {
       </div>
 
       {/* Content Container */}
-      <div className="relative w-full h-full flex flex-col px-32 py-20">
+      <div className="relative w-full h-full flex flex-col px-32 py-16">
         {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <h1 className="text-5xl text-[#1A0B2E] tracking-tight">
             Why Standard Pre-sales Stopped Working
@@ -24,7 +24,7 @@ export function Slide2PresalesProblem() {
         </motion.div>
 
         {/* Three Problem Sections */}
-        <div className="flex flex-col gap-8 flex-1 justify-center">
+        <div className="flex flex-col gap-6 flex-1">
           {/* Section 1 */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}

@@ -98,8 +98,8 @@ export function Slide7AlreadyStarted() {
               </div>
               <div className="text-lg text-[#2D1B69]">
                 <p className="mb-2"><strong>Goal of this stage:</strong></p>
-                <p>👉 Test the format and reaction</p>
-                <p>👉 Before investing in full implementation</p>
+                <p>• Test the format and reaction</p>
+                <p>• Before investing in full implementation</p>
               </div>
             </motion.div>
           </div>

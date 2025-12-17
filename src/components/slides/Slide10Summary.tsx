@@ -29,9 +29,8 @@ export function Slide10Summary() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-center mb-12 relative"
+          className="text-center mb-12"
         >
-          <Quote className="w-12 h-12 text-[#E9D5FF] absolute -top-6 left-1/2 -translate-x-1/2" />
           <blockquote className="text-3xl bg-gradient-to-r from-[#6B46C1] to-[#9333EA] bg-clip-text text-transparent leading-relaxed max-w-5xl mx-auto">
             "Live-Demo platform transforms the sales process<br />
             from a set of slides<br />
@@ -53,15 +52,15 @@ export function Slide10Summary() {
             </h3>
             <div className="space-y-4 text-lg text-[#2D1B69]">
               <div className="flex items-start gap-3">
-                <span className="text-2xl shrink-0">👁️</span>
+                <Eye className="w-6 h-6 text-[#6B46C1] shrink-0 mt-1" />
                 <p>Client <strong>sees</strong> how the system works during an incident</p>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-2xl shrink-0">🔍</span>
+                <span className="w-6 h-6 text-[#6B46C1] shrink-0">•</span>
                 <p>Technical value becomes observable before purchase</p>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-2xl shrink-0">🎯</span>
+                <Target className="w-6 h-6 text-[#6B46C1] shrink-0 mt-1" />
                 <p>Pre-sales stops being explanation and becomes demonstration</p>
               </div>
             </div>
@@ -79,15 +78,15 @@ export function Slide10Summary() {
             </h3>
             <div className="space-y-4 text-lg text-[#2D1B69]">
               <div className="flex items-start gap-3">
-                <span className="text-2xl shrink-0">⭐</span>
+                <Star className="w-6 h-6 text-[#9333EA] shrink-0 mt-1" />
                 <p>Differentiation among licensed providers</p>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-2xl shrink-0">🤝</span>
+                <Handshake className="w-6 h-6 text-[#9333EA] shrink-0 mt-1" />
                 <p>Growing trust from technical buyers</p>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-2xl shrink-0">📈</span>
+                <TrendingUp className="w-6 h-6 text-[#9333EA] shrink-0 mt-1" />
                 <p>Foundation for scalable and mature sales process</p>
               </div>
             </div>

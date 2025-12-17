@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Slide1MarketContext } from './components/slides/Slide1MarketContext';
 import { Slide2PresalesProblem } from './components/slides/Slide2PresalesProblem';
@@ -39,16 +39,16 @@ export default function App() {
     }
   };
 
-  const handleKeyDown = (e: KeyboardEvent) => {
-    if (e.key === 'ArrowRight') nextSlide();
-    if (e.key === 'ArrowLeft') prevSlide();
-  };
-
   // Attach keyboard listeners
-  useState(() => {
-    window.addEventListener('keydown', handleKeyDown as any);
-    return () => window.removeEventListener('keydown', handleKeyDown as any);
-  });
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowRight') nextSlide();
+      if (e.key === 'ArrowLeft') prevSlide();
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [currentSlide]);
 
   const CurrentSlideComponent = slides[currentSlide];
 
@@ -90,16 +90,6 @@ export default function App() {
         <div className="absolute bottom-4 left-8 text-[#9333EA]/50 text-xs">
           Slide {currentSlide + 1}
         </div>
-
-        {/* Logo Placeholder - Top Left */}
-        <div className="absolute top-8 left-12 text-[#6B46C1]">
-          LOGO
-        </div>
-      </div>
-
-      {/* Instructions */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/50 text-sm">
-        Use arrow keys or buttons to navigate
       </div>
     </div>
   );
